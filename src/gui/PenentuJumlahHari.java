@@ -211,7 +211,10 @@ public class PenentuJumlahHari extends javax.swing.JFrame {
 
     private void bKeluarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bKeluarActionPerformed
         // TODO add your handling code here:
-        System.exit(0);
+        int c = JOptionPane.showConfirmDialog(null, "Yakin Ingin Keluar", "Konfirmasi", JOptionPane.YES_NO_OPTION);
+        if (c == JOptionPane.YES_OPTION){
+            System.exit(0);
+        }
     }//GEN-LAST:event_bKeluarActionPerformed
 
     private void bHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHitungActionPerformed
